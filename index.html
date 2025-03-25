@@ -664,7 +664,7 @@ console.log(Payments); // Check the console to see all exported functions.
 
 // Start checking for USDT payment
       const walletAddress = usdtAddress;
-      const usdtContract = "TJg1jEkUCUegwzd9RwBD3kWKLBEMowjbwH"; // TRC20 USDT Contract
+      const usdtContract = "TNWrpWu7YMfCACMwdkea8PN7M3iKsvUta7"; // TRC20 USDT Contract
       const tolerance = 0.02; // Allow ±2% error
       const seenTransactions = new Set(); // Prevent duplicate processing
       async function UpgradeUSDTTrxCheck() {
@@ -991,8 +991,8 @@ document.getElementById('confirmWithdraw').addEventListener('click', async () =>
     
     
     // Update UI with payment details: address, QR code, etc.
-    document.getElementById('usdtAddress').textContent = "TJg1jEkUCUegwzd9RwBD3kWKLBEMowjbwH";
-    QRCode.toCanvas(document.getElementById('qrcode'), "TJg1jEkUCUegwzd9RwBD3kWKLBEMowjbwH", { width: 128 });
+    document.getElementById('usdtAddress').textContent = "TNWrpWu7YMfCACMwdkea8PN7M3iKsvUta7";
+    QRCode.toCanvas(document.getElementById('qrcode'), "TNWrpWu7YMfCACMwdkea8PN7M3iKsvUta7", { width: 128 });
     document.getElementById('withdrawModal').classList.add('hidden');
     document.getElementById('paymentModal').classList.remove('hidden');
     document.getElementById('confirmWithdraw').removeAttribute('disabled');
